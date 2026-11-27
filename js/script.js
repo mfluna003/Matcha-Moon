@@ -146,3 +146,41 @@ videoCards.forEach((card) => {
   });
 });
 
+// Abre el modal de cualquier producto
+let lastFocusedElement = null;
+let currentSlide = 0;
+
+function openModal(id) {
+  const modal = document.getElementById(id);
+  if (!modal) return;
+
+  lastFocusedElement = document.activeElement;
+  modal.classList.add("is-open");
+  document.body.style.overflow = "hidden";
+
+  const closeButton = modal.querySelector(".modal-close");
+  if (closeButton) closeButton.focus();
+}
+
+// Cierra todos los modales
+function closeModal() {
+  document.querySelectorAll(".modal").forEach(modal => {
+    modal.classList.remove("is-open");
+  });
+
+  document.body.style.overflow = "";
+
+  if (lastFocusedElement) lastFocusedElement.focus();
+}
+
+// Cierra el modal al hacer clic fuera de la tarjeta
+document.querySelectorAll(".modal").forEach(modal => {
+  modal.addEventListener("click", event => {
+    if (event.target === modal) closeModal();
+  });
+});
+
+// Cierra el modal al presionar ESC
+document.addEventListener("keydown", event => {
+  if (event.key === "Escape") closeModal();
+});

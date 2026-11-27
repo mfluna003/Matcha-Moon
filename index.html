@@ -181,13 +181,13 @@
               <h3>Vanilla Matcha Latte</h3>
               <p class="price">$60 MXN</p>
               <p class="description">Suave, cremoso y con el toque perfecto de vainilla.¡Un gustito que alegra tu día!</p>
-              <button type="button" class="btn card" onclick="openModal('modal-caja')">¡Pruébalo hoy!</button>
+              <button type="button" class="btn card" onclick="openModal('modal-Vainilla-Matcha-Latte')">¡Pruébalo hoy!</button>
             </div>
           </article>
 
       <!-- SERVICIO 2 - TARJETA -->
           <article class="product-card reveal">
-            <img src="img/foto 7.png" alt="trawberry Moon - Frappé de Fresa">
+            <img src="img/foto 7.png" alt="Strawberry Moon - Frappé de Fresa">
             <div class="product-body">
               <span class="tag">DULCE TENTACIÓN</span>
               <h3>Strawberry Moon</h3>
@@ -196,7 +196,7 @@
             ¿Antojo de algo dulce?
             Fresa, leche cremosa y mucho sabor.
             ¡Un sorbito de felicidad!</p>
-              <button type="button" class="btn card" onclick="openModal('modal-caja')">¡Pruébalo hoy!</button>
+              <button type="button" class="btn card" onclick="openModal('modal-Strawberry-Moon')">¡Pruébalo hoy!</button>
             </div>
           </article>
 
@@ -413,7 +413,9 @@
           <ul>
             <li><i data-lucide="instagram"></i> <a href="https://www.instagram.com/maferlunaaaa?gwpx=MWd4YjlibzI3a2V1MQ%3D%3D&utm_source=qr/" target="_blank" rel="noopener noreferrer">@matchamoon</a></li>
             <li><i data-lucide="facebook"></i> <a href="https://facebook.com/" target="_blank" rel="noopener noreferrer">Dulce Detalle</a></li>
-            <li><i data-lucide="mail"></i> <a href="mailto:hola@dulcedetalle.mx">hola@dulcedetalle.mx</a></li>
+            <li><i data-lucide="mail"></i> <a href="mailito.mf.luna003@ebc.edu.mx">mf.luna003@ebc.edu.mx</a></li>
+            <li><i data-lucide="map"></i> <a href="https://maps.app.goo.gl/KJsaLtjCvWE4tD6F6"> C. Cerro de las Campanas
+</a></li>
             <li><i data-lucide="clock-3"></i> Lunes a sábado, 10:00 a 19:00</li>
           </ul>
         </aside>
@@ -430,6 +432,70 @@
     <p>© <span id="current-year"></span> Matcha Moon. Todos los derechos reservados.</p>
     <a href="#inicio">Volver arriba ↑</a>
   </footer>
+
+<!---- MOPDAL PARA LOS PRODUCTOS 0 SERVICIOS, ETC-->
+
+ <div id="modal-Vainilla-Matcha-Latte" class="modal" role="dialog" aria-modal="true" aria-labelledby="modal-Vainilla-Matcha-Lattee">
+    <div class="modal-panel">
+      <div class="modal-image">
+        <img src="img/foto 5.png" alt="Vainilla matcha latte.">
+        <button type="button" class="modal-close" aria-label="Cerrar producto" onclick="closeModal('modal-caja')"><i data-lucide="x"></i></button>
+      </div>
+      <div class="modal-body">
+        <h2 id="modal-Vainilla Matcha Latte">Vanilla Matcha Latte</h2>
+        <p class="price">$60 MXN</p>
+        <p>  Una deliciosa combinación de matcha,
+            leche cremosa y un dulce toque de vainilla.
+            ¡Felicidad en cada sorbo!.</p>
+        <h3>¿Qué hace especial esta bebida?</h3>
+         <ul>
+                <li>Matcha suave y delicioso</li>
+                <li>Leche cremosa</li>
+                <li>Un toque dulce de vainilla</li>
+                <li>Perfecto para consentirte</li>
+          </ul>
+
+        <button type="button" class="btn primary" onclick="openWhatsApp('Hola, quiero pedir un Vanilla Matcha Latte')">Pedir por WhatsApp</button>
+      </div>
+    </div>
+  </div>
+
+
+<!-- MODAL STRAWBERRY MOON -->
+<div id="modal-Strawberry-Moon" class="modal" role="dialog" aria-modal="true" aria-labelledby="modal-strawberry-title">
+  <div class="modal-panel">
+    <div class="modal-image">
+      <img src="img/foto 7.png" alt="Strawberry Moon.">
+
+      <button type="button" class="modal-close" aria-label="Cerrar producto" onclick="closeModal('modal-Strawberry-Moon')">
+        <i data-lucide="x"></i>
+      </button>
+    </div>
+
+    <div class="modal-body">
+      <h2 id="modal-strawberry-title">Strawberry Moon</h2>
+      <p class="price">$70 MXN</p>
+
+      <p>¿Antojo de algo dulce?
+        Nuestro frappé de fresa combina
+        leche cremosa y mucho sabor.
+        ¡Un sorbito de felicidad!
+      </p>
+
+      <h3>¿Qué hace especial esta bebida?</h3>
+      <ul>
+        <li>Delicioso sabor a fresa</li>
+        <li>Leche cremosa</li>
+        <li>Un toque dulce y refrescante</li>
+        <li>Perfecto para consentirte</li>
+      </ul>
+
+      <button type="button" class="btn primary" onclick="openWhatsApp('Hola, quiero pedir un Strawberry Moon')">
+        Pedir por WhatsApp
+      </button>
+    </div>
+  </div>
+</div>
 
   <script src="js/script.js"></script>
 
